@@ -1,12 +1,15 @@
 // Naive solution (will time out for larger numbers)
 function isPrime(num) {
   //TODO
-  for (var i = 2; i < num; i++)
-    if (num % i === 0) {
+  for (var i = 2; i < num; i++) {
+    if (num % i == 0) {
       return false;
     }
+  }
   return num > 1;
 }
+
+console.log(isPrime(2));
 
 function optimizePrime(num) {
   if (num <= 1) return false; // negatives
